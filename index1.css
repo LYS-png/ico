@@ -1,0 +1,113 @@
+body{
+    width: 900px;
+    margin-left: auto; /*内容居中*/
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: rgb(241, 238, 238);
+    color: #444;    /*字体颜色*/
+    position: relative;
+}
+
+.img1{
+    width: 40%;
+    height: 40%;
+    margin-left: 270px;
+}
+/*一级导航栏*/
+.nav{
+    list-style: none; /*去掉黑点*/
+    padding: 0px;
+    background-color: white;
+    margin: 0px;
+}
+
+.nav>li{
+    display: inline-block;  /*横向导航栏*/
+    padding: 18px 12px 18px 12px;
+}
+.nav>li:hover {   /*鼠标移上去之后更改背景色*/ 
+    background-color: rgb(221, 216, 216);
+}
+.nav>li>a{
+    display: inline-block;
+    padding: 18px 12px 18px 12px; 
+}
+
+li>img{
+    height: 16px;
+    margin-bottom: -3px;
+}
+
+/*二级导航栏*/
+.submenu{
+    display: none; /*隐藏*/
+    position: relative;z-index:10;/*保证二级导航栏在视频之上*/ 
+}
+/*一级和二级框都用到了*/
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: #444;
+}
+.nav>li:hover ul{
+    display: block;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: -12px;
+}
+
+.nav>li:hover ul>li:hover{
+    background-color: rgb(221, 216, 216);
+}
+button{
+    border: none;
+    font-size: 15px;
+    padding: 18px 35px 18px 39px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
+button:hover{
+    background-color: rgb(221, 216, 216);
+}
+
+/*第三区域*/
+.conten{
+    width: 900px;
+    height: 500px;
+    color: rgb(0, 0, 0);
+}
+.conten1{
+    width: 900px;
+    height: 500px;
+    background-image: url('imgs/IT.jfif');
+    position: absolute;
+    z-index: 2;
+}
+#tt2{
+    height: 500px;
+    width: 900px;
+    position: absolute;
+    z-index: 3;
+    background-color: #d4d3d396;
+}
+.video1{
+    width: 902px;
+    height: 101%;
+    text-align: center;
+    margin-top: -2px;
+    margin-left: -1px;
+    outline: none;
+    position: absolute;
+    z-index: 0;
+}
+
+
+/* 底框 */
+.font{
+    padding: 21px;
+    background-color: white;
+}
